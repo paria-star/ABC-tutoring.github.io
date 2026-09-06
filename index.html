@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Tutoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/analytics.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">ABC <span>Tutoring</span></div>
+    <nav class="site-nav">
+      <a href="#intro">Intro</a>
+      <a href="#tutors">Tutors</a>
+      <a href="#contact" class="contact-link">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="intro">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+    </div>
+    <h1>Find the right tutor for your student</h1>
+    <p class="subtitle">ABC Tutoring has been helping K–12 students build confidence in math,
+    science, and reading for six years, led by a former middle school teacher. Browse our
+    tutors below and book a session in a few clicks.</p>
+    <div class="hero-actions">
+      <a href="#tutors" class="btn">Browse Tutors</a>
+      <a href="#contact" class="btn secondary">Ask a Question</a>
+    </div>
+  </section>
+
+  <main>
+    <div class="section-band band-white-bordered" id="why-us">
+     <div class="section-inner">
+      <div class="section-heading">
+        <h2>Why families choose ABC Tutoring</h2>
+        <p>Small, personal, and easy to book.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="icon">🎓</span>
+          <h3>Experienced Tutors</h3>
+          <p>Every tutor is vetted, with real classroom or subject-matter experience.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">💻</span>
+          <h3>In-Person or Online</h3>
+          <p>Choose whichever format works best for your family's schedule.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📅</span>
+          <h3>Easy Booking</h3>
+          <p>See real availability and request a session in under a minute.</p>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="section-band band-white" id="tutors">
+     <div class="section-inner">
+      <div class="section-heading">
+        <h2>Meet our tutors</h2>
+        <p>Filter by subject to find the right fit.</p>
+      </div>
+      <div class="filter-bar">
+        <label for="subject-filter" style="font-weight:700;">Filter by subject:</label>
+        <select id="subject-filter">
+          <option value="">All subjects</option>
+        </select>
+      </div>
+      <div class="tutor-grid" id="tutor-grid"></div>
+     </div>
+    </div>
+
+    <div class="section-band band-green-light" id="contact">
+     <div class="section-inner">
+      <div class="section-heading">
+        <h2>Contact Us</h2>
+        <p>Questions about a tutor or scheduling? Send us a message.</p>
+      </div>
+      <div id="contact-wrapper">
+        <form class="contact-form" id="contact-form">
+          <label for="contactName">Your name</label>
+          <input type="text" id="contactName" required>
+
+          <label for="contactEmail">Your email</label>
+          <input type="email" id="contactEmail" required>
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" required></textarea>
+
+          <br><br>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+     </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    ABC Tutoring &middot; Run by a former middle school teacher<br>
+    <a href="mailto:contact@abctutoring.example">contact@abctutoring.example</a>
+    <div class="social-row">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="js/tutors-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
